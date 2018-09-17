@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/article/article"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#cd2228",
+    "navigationBarTitleText": "生活小助手",
+    "navigationBarTextStyle": "fff",
+    "backgroundColor": "#666"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#cd2228",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "iconPath": "images/weather.png",
+        "selectedIconPath": "images/weather_press.png",
+        "pagePath": "pages/index/index",
+        "text": "天气预报"
+      },
+      {
+        "iconPath": "images/article.png",
+        "selectedIconPath": "images/article_press.png",
+        "pagePath": "pages/article/article",
+        "text": "精选文章"
+      },
+      {
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_press.png",
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
