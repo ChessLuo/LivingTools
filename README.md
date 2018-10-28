@@ -17,13 +17,15 @@
 ### 二、主要效果图
 #### 天气预报：
 
-![](./screenshots/1.jpg)
+<img border="1" src="./screenshots/1.jpg" width="310" height="auto">
 
 #### 邮件查询：
-![](./screenshots/2.jpg)
+
+<img border="1" src="./screenshots/2.jpg" width="310" height="auto">
 
 #### 个人中心：
-![](./screenshots/3.jpg)
+
+<img border="1" src="./screenshots/3.jpg" width="310" height="auto">
 
 
 ### 三、欢迎体验
