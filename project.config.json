@@ -12,7 +12,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.3.0",
-	"appid": "wx5077dd97479c355a",
+	"appid": "wxbd7f5596f0201e1f",
 	"projectname": "LivingTools",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -24,6 +24,10 @@
 			"list": []
 		},
 		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
 			"current": -1,
 			"list": []
 		},

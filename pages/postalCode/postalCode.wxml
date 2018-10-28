@@ -1,0 +1,83 @@
+<!--邮编查询-->
+<view class='page-body'>
+  <view class='top-view'>
+    <text >邮政编码通常是用阿拉伯数字组成，代表投递邮件的邮局的一种专用代号，也是这个局投递范围内的居民和单位通信的代号。邮政编码是实现邮件机器分拣的邮政通信专用代号，是实现邮政现代化的必需工具，最终目的是使您的信件在传递过程中提高速度和准确性，因此在交寄信件、包裹时务必写明邮政编码。</text>
+  </view>
+
+  <view class='find-view'>
+    <van-tabs active="{{ 0 }}" color="#FF545A"	bind:change="onChange">
+      <van-tab title="城市查邮编">
+        <view class='select-city-view' bindtap="openPickerView">
+          <text>{{addressName}}</text>
+          <view class='gline'></view>
+        </view>
+      </van-tab>
+      <van-tab title="邮编查城市">
+        <view class='input-code-view'>
+          <input type="number" bindinput="postNumInput" placeholder="请输入邮编..." />
+          <view class='input-line'></view>
+        </view>
+      </van-tab>
+    </van-tabs>
+
+  </view>
+
+  <view class='bottom-btn-view' bindtap='queryCityClick'>
+    <button>查询</button>
+  </view>
+
+  <view class="mask-bg {{showPickerView?'b':'none'}}"></view>
+  <van-popup show="{{ showRightPopup }}" close-on-click-overlay="false" position="right" bind:close="toggleRightPopup">
+    <view class="pop-page">
+      <scroll-view scroll-y="true" class="parmas-setting-croll-view">
+        <view wx:for="{{postalCodeList}}" class='list-view'>
+          <view class='item-view'>
+            <text>{{index+1}}.省份：</text>
+            <text>{{item.province}}</text>
+          </view>
+          <view class='item-view' >
+            <text>城市：</text>
+            <text>{{item.city}}</text>
+          </view>
+          <view class='item-view'>
+            <text>区（县）：</text>
+            <text>{{item.district}}</text>
+          </view>
+          <view>
+            <wux-accordion-group>
+            <wux-accordion title="街道/村：点击查看详情" content="{{item.address}}"></wux-accordion>
+        </wux-accordion-group>
+          </view>
+          <view class='item-view'>
+            <text>邮编：</text>
+            <text class='post-num' data-post='{{item.postNumber}}' bindtap='copyPostNumClick'>{{item.postNumber}}</text>
+          </view>
+        </view>
+      </scroll-view>
+      <view class='btn-pop-setting-view'>
+        <view class='reset' bindtap="toggleRightPopup">关闭</view>
+        <button class='confirm' open-type="share">分享</button>
+      </view>
+    </view>
+  </van-popup>
+</view>
+
+<!--省市区三级联动-->
+<view wx:if="{{showPickerView}}" class="picker-view-container">
+  <view class="picker-view-title">
+    <text style="margin-left:10rpx" bindtap="closePickerView">取消</text>
+    <text>选择地址</text>
+    <text style="margin-right:10rpx" bindtap="confirmPickerView">确定</text>
+  </view>
+  <picker-view class="area-picker-view" indicator-class="area-indicator-class" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{provArr}}" class="picker-view-column">{{item.province}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{cityArr}}" class="picker-view-column">{{item.city}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{areaArr}}" class="picker-view-column">{{item.district}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

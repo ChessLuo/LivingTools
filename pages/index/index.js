@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    day: ["今天", "明天", "后天"]
+    day: ["今天", "明天", "后天"],
+    isRefresh: false
   },
 
   /**
@@ -15,13 +16,6 @@ Page({
   onLoad: function (options) {
     var that = this;
     that.getLocation();
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
   },
 
   /**
@@ -46,48 +40,46 @@ Page({
   },
 
   /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
 
   },
+  //下拉刷新
+  onPullDownRefresh: function () {
+    var that = this;
+    that.getLocation();
+    that.setData({
+      isRefresh:true
+    });
+  },
   //通过微信，获取当前经纬度
   getLocation: function () {
     var that = this;
-
+    //显示加载动画
+    app.showLoading("加载中..");
     wx.getLocation({
       type: "wgs84",
       success: function (res) {
         var latitude = res.latitude //纬度
         var longitude = res.longitude //经度
         console.log("纬度经度 lat:" + latitude + " lon:" + longitude)
-        //显示加载动画
-        wx.showLoading({
-          title: '加载中',
-        })
-
         //调用天气查询
         that.getWeatherInfo(latitude, longitude);
       },
       fail: function (e) {
-        console.log("获取位置失败")
+        wx.hideLoading();
+        app.showModal1("获取当前位置失败");
       },
-      complete: function () {
-        console.log("获取位置完成")
+      complete:function(){
+        if (that.data.isRefresh){
+          that.setData({
+            isRefresh:false
+          });
+          setTimeout(function(){
+            wx.stopPullDownRefresh();
+          },1000);
+        }
       }
     })
   },
@@ -104,6 +96,7 @@ Page({
         location: longitude + ',' + latitude
       },
       success: function (res) {
+        wx.hideLoading();
         console.log("最新天气========：" + JSON.stringify(res))
         //当前城市
         var currCity = res.data.HeWeather6[0].basic.parent_city;
@@ -157,8 +150,9 @@ Page({
         })
 
       },
-      fail: function (res) { },
-      complete: function (res) { },
+      fail: function (res) {
+        wx.hideLoading();
+      }
 
     });
 

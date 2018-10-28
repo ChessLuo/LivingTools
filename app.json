@@ -2,18 +2,19 @@
   "pages": [
     "pages/index/index",
     "pages/mine/mine",
-    "pages/article/article"
+    "pages/postalCode/postalCode",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#cd2228",
-    "navigationBarTitleText": "生活小助手",
+    "navigationBarBackgroundColor": "#FF545A",
+    "navigationBarTitleText": "生活全能通",
     "navigationBarTextStyle": "fff",
     "backgroundColor": "#666"
   },
   "tabBar": {
     "color": "#666666",
-    "selectedColor": "#cd2228",
+    "selectedColor": "#FF545A",
     "borderStyle": "black",
     "backgroundColor": "#fff",
     "list": [
@@ -24,10 +25,10 @@
         "text": "天气预报"
       },
       {
-        "iconPath": "images/article.png",
-        "selectedIconPath": "images/article_press.png",
-        "pagePath": "pages/article/article",
-        "text": "精选文章"
+        "iconPath": "images/postalcode.png",
+        "selectedIconPath": "images/postalcode_press.png",
+        "pagePath": "pages/postalCode/postalCode",
+        "text": "邮编查询"
       },
       {
         "iconPath": "images/mine.png",

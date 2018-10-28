@@ -31,7 +31,8 @@ App({
           })
         }
       }
-    })
+    });
+    this.globalData.sysinfo = wx.getSystemInfoSync();
   },
   globalData: {
     userInfo: null
@@ -53,16 +54,22 @@ App({
   },
 
   //toast提示
-  toastTap: function (txt) {
+  toastTips: function (txt) {
     wx.showToast({
       title: txt
     })
   },
   //toast提示，可以设置等待时长
-  toastTap1: function (txt) {
+  toastTips1: function (txt,time) {
     wx.showToast({
       title: txt,
-      duration: 3000
+      duration: time
+    })
+  },
+  toastTips2: function (txt) {
+    wx.showToast({
+      title: txt,
+      icon: "loading"
     })
   },
   //弹窗提示

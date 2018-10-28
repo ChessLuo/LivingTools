@@ -1,3 +1,4 @@
 {
-  "navigationBarTitleText": "天气预报"
+  "navigationBarTitleText": "天气预报",
+  "enablePullDownRefresh": true
 }

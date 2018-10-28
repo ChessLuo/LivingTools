@@ -1,1 +1,88 @@
-/* pages/mine/mine.wxss */
+/* 个人中心 */
+.top-view {
+  width: 750rpx;
+  background-color: #FF545A;
+  color: #fff;
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.head-img {
+  width: 200rpx;
+  height: 200rpx;
+  border: 5rpx solid #fff;
+  border-radius: 50%;
+}
+.head-name {
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+.login-view{
+}
+.login-view button {
+padding: 10rpx 20rpx;
+font-size:30rpx;
+text-align:center;
+text-decoration:none;
+border-radius:30rpx;
+border: 5rpx solid #fff;
+color:#fff;
+line-height:30rpx;
+margin-top: 20rpx;
+background-color:#FF545A;
+
+}
+/* 显示和隐藏 */
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+
+.item-list {
+  background-color: #fff;
+  width: 750rpx;
+  height: 100rpx;
+  padding: 12rpx 20rpx;
+  display:flex;
+  flex-direction:row;/*row就是水平显示*/
+  align-items: center
+}
+.item-icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+.item-context-view{
+  margin-left: 10rpx;
+}
+.item-icon-next {
+  width: 32rpx;
+  height: 32rpx;
+  right: 20rpx;
+  position: absolute
+}
+
+.margin-top{
+  margin-top: 10rpx;
+}
+
+.cbtn{
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF545A;
+}
+.cb_img{
+  width: 80rpx;
+  height: 80rpx;
+}
+button::after{
+    border: none;
+  }

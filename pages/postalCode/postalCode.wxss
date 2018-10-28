@@ -1,0 +1,221 @@
+/* pages/article/article.wxss */
+
+/* 邮编显示、复制 */
+
+.top-view {
+  text-indent: 64rpx;
+  background-color: #ff545a;
+  color: #fff;
+  padding: 0rpx 20rpx;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 功能查询 */
+
+.find-view {
+  height: 30vh;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 45vh;
+  background-color: #fff;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.3);
+}
+
+.bottom-btn-view {
+  position: absolute;
+  top: 71vh;
+  width: 30%;
+  left: 35%;
+  border-radius: 10rpx;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.3);
+}
+
+.bottom-btn-view button {
+  line-height: 8vh;
+  height: 8vh;
+  border-radius: 10rpx;
+  color: #fff;
+  font-size: 36rpx;
+  background-color: #ff545a;
+}
+
+.select-city-view {
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.input-code-view {
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.input-code-view input {
+  display: block;
+  height: 32rpx;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 32rpx;
+  min-height: 32rpx;
+  text-align: center;
+  padding-bottom: 20rpx;
+}
+
+.input-line {
+  border-bottom: 1rpx solid #ccc;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.gline {
+  border-bottom: 1rpx solid #ccc;
+  margin: 20rpx 0rpx 0rpx 15%;
+  width: 70%;
+}
+
+/*省市区picker-view样式*/
+
+.picker-view-container {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+}
+
+.picker-view-title {
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  background: #ff545a;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.picker-view-title text {
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.area-picker-view {
+  width: 100%;
+  height: 400rpx;
+  font-size: 32rpx;
+  color: #333;
+  background: rgb(223, 210, 210);
+}
+
+.mask-bg {
+  position: absolute;
+  z-index: 99;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.area-indicator-class {
+  height: 100rpx;
+}
+
+.picker-view-column {
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.none {
+  display: none;
+}
+
+.b {
+  display: block;
+}
+
+/* 彈窗 */
+
+.pop-page {
+  width: 650rpx;
+  background-color: #fff;
+  height: 100vh;
+  font-size: 32rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.icon-delete-pop {
+  float: right;
+  padding-right: 20rpx;
+  padding-top: 20rpx;
+}
+
+.parmas-setting-croll-view {
+  border-radius: 10rpx;
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  bottom: 100rpx;
+}
+
+.list-view {
+  padding: 0rpx 20rpx;
+  margin:25rpx 15rpx;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.3);
+}
+
+.item-view {
+  display: flex;
+  padding: 10rpx 0rpx;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-num {
+  color: #ff545a;
+  font-weight: bold;
+}
+
+.btn-pop-setting-view {
+  position: fixed;
+  width: 100%;
+  flex-direction: row;
+  bottom: 0;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-top: 1rpx solid #ccc;
+}
+
+.reset {
+  width: 50%;
+  background-color: #f5f5f5;
+  color: #252525;
+  font-size: 32rpx;
+  position: relative;
+  float: left;
+}
+
+.confirm {
+  width: 50%;
+  float: left;
+}
+.btn-pop-setting-view button {
+font-size:32rpx;
+height:88rpx;
+line-height:88rpx;
+border-radius:0;
+color:#fff;
+background-color:#ff545a;
+
+}

@@ -1,18 +1,19 @@
 /* pages/index/index.wxss */
 .top{
   width: 100%;
-  height: 700rpx;
+  height: 50vh;
 }
 .img-bg {
   width: 100%;
-  height: 700rpx;
+  height: 50vh;
+  background-color:#FF545A; 
 }
 .top-context {
   position: absolute;
   left: 0rpx;
   top: 0rpx;
   width: 100%;
-  height: 700rpx;
+  height: 50vh;
   color: #fff;
 }
 .currentWeather { 

@@ -1,0 +1,7 @@
+/* pages/about/about.wxss */
+.about{
+  margin: 25rpx;
+  padding: 15rpx;
+  box-shadow: 3rpx 4rpx 8rpx rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
