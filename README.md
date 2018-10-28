@@ -30,7 +30,7 @@
 
 ### 三、欢迎体验
 * 目前小程序已经上线，整个开发流程也算是大概了解和尝试过了。最后贴出小程序码，欢迎体验！
-* ![](./screenshots/wcode.jpg)
+* <img border="1" src="./screenshots/wcode.jpg" width="200" height="auto">
 
 
 ### 四、致谢
