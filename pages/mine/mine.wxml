@@ -27,8 +27,12 @@
 
 
 
-<button class="cbtn" open-type="contact" session-from="weapp">
-  <image class="cb_img" src="../../images/service.png"></image>
-</button> 
+  <button class="cbtn" open-type="contact" session-from="weapp">
+    <image class="cb_img" src="../../images/service.png"></image>
+  </button>
+
+  <view class='gzh-view'>
+    <official-account></official-account>
+  </view>
 
 </view>

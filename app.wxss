@@ -17,3 +17,12 @@ page {
 .wline {
   border: 1rpx solid white;
 }
+
+/* 程序猿在廣東 */
+.gzh-view {
+  position: fixed;
+  bottom: 10rpx;
+  left: 5%;
+  width: 90%;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.3);
+}
