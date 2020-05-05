@@ -3,21 +3,38 @@
 	"packOptions": {
 		"ignore": []
 	},
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.3.0",
+	"libVersion": "2.10.0",
 	"appid": "wxbd7f5596f0201e1f",
-	"projectname": "LivingTools",
+	"projectname": "SuperTool",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -35,9 +52,83 @@
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "关于",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "天气预报",
+					"pathName": "pages/weather/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "邮编查询",
+					"pathName": "pages/postalCode/postalCode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/postalCode/postalCode",
+					"pathName": "pages/postalCode/postalCode",
+					"query": "",
+					"scene": 1011
+				},
+				{
+					"id": -1,
+					"name": "号码归属地",
+					"pathName": "pages/mobilePlace/mobilePlace",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "每日一笑",
+					"pathName": "pages/joke/joke",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "历史上的今天",
+					"pathName": "pages/historyToday/historyToday",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "历史上的今天详情页",
+					"pathName": "pages/history-detail/history-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "九宫格切图",
+					"pathName": "pages/grid-crop/grid-crop",
+					"scene": null
+				}
+			]
 		}
 	}
 }

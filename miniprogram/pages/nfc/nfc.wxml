@@ -1,0 +1,5 @@
+<!--miniprogram/pages/nfc/nfc.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">NFC读卡器</view>
+</cu-custom>

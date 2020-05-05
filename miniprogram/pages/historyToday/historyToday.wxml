@@ -1,0 +1,28 @@
+<!--miniprogram/pages/historyToday/historyToday.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">历史上的今天</view>
+</cu-custom>
+
+<view class="container bg-gradual-blue">
+  <view class="header full-width">
+    <view>{{year}}年{{month}}月{{day}}日</view>
+
+    <wux-date-picker minDate="2000-01-01" maxDate="2080-12-31" mode="date" value="{{ dataValue }}" lang="{{ lang }}" data-index="1" data-mode="date" bind:confirm="onDataConfirm">
+      <wux-cell title="切换日期"></wux-cell>
+    
+      <!-- <view class="date">切换日期</view> -->
+    </wux-date-picker>
+
+  </view>
+  <view class="content full-width">
+    <view class="list-view">
+      <block wx:for="{{list}}" wx:key="index">
+        <navigator url="{{'/pages/history-detail/history-detail?e_id=' + item.e_id}}" class="list-item">
+          <view class="item-title">{{item.title}}</view>
+          <view class="item-date">{{item.date}}</view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+</view>

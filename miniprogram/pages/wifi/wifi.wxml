@@ -1,0 +1,6 @@
+<!--miniprogram/pages/wifi/wifi.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">WIFI扫描</view>
+</cu-custom>
+

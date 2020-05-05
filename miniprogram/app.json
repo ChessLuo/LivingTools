@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/weather/index",
+    "pages/postalCode/postalCode",
+    "pages/my/my",
+    "pages/about/about",
+    "pages/log/log",
+    "pages/mobilePlace/mobilePlace",
+    "pages/historyToday/historyToday",
+    "pages/joke/joke",
+    "pages/history-detail/history-detail",
+    "pages/grid-crop/grid-crop",
+    "pages/nfc/nfc",
+    "pages/wifi/wifi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e24c00",
+    "navigationBarTitleText": "具无霸",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom",
+    "backgroundColor": "#666"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#e24c00",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_press.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_press.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx54d497a8dd210ed9"
+  ],
+  "usingComponents": {
+    "cu-custom": "/myComponent/colorui/components/cu-custom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "需要获取当前位置信息用来读取天气预报数据"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

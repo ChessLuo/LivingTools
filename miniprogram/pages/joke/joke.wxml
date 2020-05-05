@@ -1,0 +1,14 @@
+<!--miniprogram/pages/joke/joke.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">每日一笑</view>
+</cu-custom>
+
+<view class="body">
+  <view class="cu-card article" wx:for="{{contentList}}" wx:key>
+    <view class="cu-item shadow" id="{{index}}" data-content="{{item.content}}" bindtap="itemClick">
+      <text>{{item.content}}</text>
+    </view>
+  </view>
+  <view hidden="{{isHiddenLoadingMore ? true : false}}" class="no-more-goods">没有更多啦</view>
+</view>

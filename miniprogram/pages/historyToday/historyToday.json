@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wux-date-picker": "../../myComponent/wux/date-picker/index",
+    "wux-cell-group": "../../myComponent/wux/cell-group/index",
+    "wux-cell": "../../myComponent/wux/cell/index"
+  }
+}

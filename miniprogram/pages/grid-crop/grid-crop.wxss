@@ -1,0 +1,85 @@
+/* miniprogram/pages/grid-crop/grid-crop.wxss */
+
+page {
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.page-view {
+  height: 100%;
+}
+
+.img-bg {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  /* background-color:#FF545A;  */
+}
+
+.canvas-box {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.canvas-in {
+   min-width: 100%;
+  height: 100%;
+  z-index: -999;
+  top:200vh;
+  position: absolute;
+}
+
+.imgs {
+  width: 700rpx;
+  height: 700rpx;
+  position: absolute;
+  top: 20%;
+  margin-left: 25rpx;
+  
+  z-index: 999;
+  background-color: #fff;
+}
+
+.imgs-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8rpx;
+  box-sizing: border-box;
+}
+
+.img {
+  flex-shrink: 0;
+  width: 33.3%;
+  padding: 5rpx;
+  box-sizing: border-box;
+}
+
+.btns-box {
+  position: fixed;
+  bottom: 120rpx;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.btn-cut {
+  margin-right: 50rpx;
+  background-color: transparent;
+}
+
+.btn-save {
+  background-color: transparent;
+}
+
+.cu-btn {
+  padding: 40rpx 30rpx !important;
+  font-size: 32rpx;
+}

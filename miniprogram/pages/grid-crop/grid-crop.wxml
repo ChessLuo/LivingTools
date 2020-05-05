@@ -1,0 +1,34 @@
+<!--miniprogram/pages/grid-crop/grid-crop.wxml-->
+<!-- <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">切九图</view>
+</cu-custom> -->
+
+<view class='cu-custom'>
+  <view class="cu-bar fixed bg-shadeTop" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='cuIcon-back'></text> 返回
+    </navigator>
+    <view class='content' style='top:{{StatusBar}}px;'>切九图</view>
+  </view>
+</view>
+
+
+<view class='page-view'>
+
+ <view class="img-bg bg-gradual-blue"></view>
+
+  <canvas canvas-id='canvasIn' id='canvas' class='canvas-in' style='{{canvasWH}}'></canvas>
+
+  <view class='imgs'>
+      <view class='imgs-box'>
+        <cover-image class='img' data-idx='{{index+1}}' src='{{item}}' style='{{maxHeight}}' wx:for='{{imgUrls}}' wx:key='{{index}}' bindtap='saveImg'></cover-image>
+      </view>
+    </view>
+
+
+  <view class='btns-box'>
+    <button bindtap='uploadImg' class='cu-btn round btn-cut bg-gradual-orange shadow'>选择图片</button>
+    <button bindtap='saveAll' class='cu-btn round btn-save bg-gradual-orange shadow'>保存图片</button>
+  </view>
+</view>

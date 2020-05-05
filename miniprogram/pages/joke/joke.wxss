@@ -1,0 +1,14 @@
+/* miniprogram/pages/joke/joke.wxss */
+.cu-card>.cu-item {
+display: block;
+background-color: #fff;
+overflow: hidden;
+border-radius: 10rpx;
+margin: 15rpx 25rpx 10rpx 25rpx;
+color: #000;
+font-size: 32rpx;
+}
+
+.cu-card.article>.cu-item {
+  padding: 20rpx 20rpx 30rpx 20rpx;
+}

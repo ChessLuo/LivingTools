@@ -1,0 +1,9 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于具无霸</view></cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-content'>
+    <view>Hi！欢迎使用具无霸小程序工具！</view>
+    <view class='margin-top-sm'>小程序是腾讯微信官方推出的一款轻量级的产品，其可在Android手机和ios手机微信运行，从2016年底宣布，到2017年正式上线；目前来到了2020年了，时间过得好快，记得当时官方刚宣布推出小程序的时候，我还在学校，那时我主要专注于Android开发；当我出来工作后，发现小程序居然火起来了，特别是在2017的下半年，当时公司重点投入小程序开发了，老板特别重视！而我还在拼命地赶Android项目，那时我有点慌，加上一些开发者自媒体总是在发一些类似“Android开发的市场已经饱和”之类的公众号文章，也是那时起我开始慢慢地接触了小程序。</view>
+<view class="margin-top-sm">小程序方案确实不错，毕竟微信流量那么大，不管是给APP引流、还是做一些小工具也罢，完全可以开发一个小程序，毕竟成本低。作为Android开发者，没必要给自己太多限制，业余时间可以多学习，我前端基础一般，但已经上手小程序开发，目前想整合之前做来练手的天气预报、邮编查询、蓝牙调试工具到一起，然后再优化界面提高用户体验，最后再新增一些功能模块，于是有了这款小程序。</view>
+
+  </view>
+</view>

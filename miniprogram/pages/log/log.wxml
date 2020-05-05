@@ -1,0 +1,24 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">日志</view></cu-custom>
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.0.0</view>
+        <view class="cu-tag line-white">2020/01/16</view>
+      </view>
+      <view class="margin-top-sm text-content">v2.0.0上线，整合天气预报、邮编查询、蓝牙调试工具，全新UI，提高用户体验；后期将新增其他好玩的小工具，敬请期待。</view>
+    </view>
+  </view>
+
+  <view class="cu-item text-blue">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.0.0</view>
+        <view class="cu-tag line-white">2018/10/28</view>
+      </view>
+      <view class="margin-top-sm text-content">第一版上线</view>
+    </view>
+  </view>
+
+
+</view>

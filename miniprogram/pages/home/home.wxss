@@ -1,0 +1,30 @@
+/* pages/home/home.wxss */
+
+.card-swiper swiper-item {
+  width: 610rpx !important;
+  left: 70rpx;
+  box-sizing: border-box;
+  padding: 30rpx 0rpx 60rpx;
+  overflow: initial;
+}
+
+.cu-list.grid>.cu-item [class*=cuIcon] {
+  position: relative;
+  display: block;
+  margin-top: 20rpx;
+  width: 100%;
+  font-size: 58rpx;
+}
+
+.grey_bg {
+  z-index: 2;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.home-tips-view{
+  /* z-index: 1000;
+  position: fixed; */
+  width: 100%;
+  bottom: 1rpx;
+}

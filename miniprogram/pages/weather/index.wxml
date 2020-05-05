@@ -1,0 +1,72 @@
+<!--天气预报-->
+<view class='cu-custom'>
+  <view class="cu-bar fixed bg-shadeTop" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='cuIcon-back'></text> 返回
+    </navigator>
+    <view class='content' style='top:{{StatusBar}}px;'>天气预报</view>
+  </view>
+</view>
+
+<view class='page-body '>
+  <view class='top bg-gradual-blue'>
+    <!-- <image src="../../images/weather_bg.jpg" class="img-bg"></image> -->
+    <view class="img-bg"></view>
+    <view class='top-context'>
+      <!--城市+天气信息-->
+      <view class="currentWeather">
+        <view class="city">
+          <text decode="{{true}}">{{currCity}}&nbsp;{{currLocation}}</text>
+        </view>
+        <view class='temp-view'>
+          <text class='temp'>{{nowTmp}}</text>
+          <text>℃</text>
+        </view>
+        <view class='weather-view'>
+          <text decode="{{true}}">{{condTxt}}&nbsp;|&nbsp;{{lifeType}}</text>
+        </view>
+      </view>
+      <!--天气详情-->
+      <view class="weatherDetail">
+        <view>
+          <view>{{dir}}</view>
+          <view>{{windDir}}</view>
+          <view class="bold">{{windSc}}级</view>
+        </view>
+        <view class="wline"></view>
+        <view>
+          <view>相对湿度</view>
+          <view class="bold">{{hum}}%</view>
+        </view>
+        <view class="wline"></view>
+        <view>
+          <view>体感温度</view>
+          <view class="bold">{{fl}}℃</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:for="{{dailyForecast}}" wx:key="this" wx:for-index="i" wx:for-item="item">
+
+    <view class="future-weather-view">
+
+      <!--开头 日期显示判断 -->
+      <view class="item_temp" wx:if="{{i>=3}}">{{item.date}}</view>
+      <view class="item_temp" wx:else>{{day[i]}}</view>
+
+      <!--中间部分 图片(区分白天黑夜) 和天气情况-->
+      <view>
+        <image class="forecast-img" src="../../images/icons/{{item.cond_code_d}}.png" wx:if="{{updateTime < 18}}"></image>
+        <image class="forecast-img" src="../../images/icons/{{item.cond_code_n}}.png" wx:else></image>
+        <view class="item_temp" wx:if="{{item.cond_txt_d == item.cond_txt_n}}">{{item.cond_txt_d}}</view>
+        <view class="item_temp" wx:else>{{item.cond_txt_d}}转{{item.cond_txt_n}}</view>
+      </view>
+      <!--最后 温度 -->
+      <view class="item_temp">{{item.tmp_min}}/ {{item.tmp_max}}℃</view>
+
+    </view>
+
+  </view>
+
+</view>

@@ -1,0 +1,33 @@
+/* miniprogram/pages/mobilePlace/mobilePlace.wxss */
+.content-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 80rpx 20rpx 0 20rpx;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 32rpx;
+}
+.content text{
+  margin-bottom: 5rpx;
+}
+.no-data{
+  margin-top: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no-data image{
+  width: 200rpx;
+  height: 150rpx;
+}
+.no-data text{
+  margin-top: 10rpx;
+}
+
+.copy-btn-view{
+  margin-top: 40rpx;
+}

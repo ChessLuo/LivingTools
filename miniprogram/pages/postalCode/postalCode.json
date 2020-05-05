@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-popup": "../../myComponent/vant/popup/index",
+    "van-tab": "../../myComponent/vant/tab/index",
+    "van-tabs": "../../myComponent/vant/tabs/index",
+    "wux-accordion-group": "../../myComponent/wux/accordion-group/index",
+    "wux-accordion": "../../myComponent/wux/accordion/index"
+  }
+}

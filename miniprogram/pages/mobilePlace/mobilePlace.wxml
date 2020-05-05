@@ -1,0 +1,32 @@
+<!--miniprogram/pages/mobilePlace/mobilePlace.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">号码归属地</view>
+</cu-custom>
+
+<view class="cu-bar bg-white search ">
+  <view class="search-form round">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="输入手机号码" confirm-type="search" bindinput="searchNum" bindconfirm="inputConfirm"></input>
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-gradual-blue shadow-blur round" bindtap="queryClick">查询</button>
+  </view>
+</view>
+
+<view class="content-view" wx:if="{{haveData}}">
+  <view class="content">
+    <text>号码归属地：{{mobilearea}}</text>
+    <text>号码类型：{{mobiletype}}</text>
+    <text>区号：{{areacode}}</text>
+    <text>邮编：{{postcode}}</text>
+    <view class="margin-tb-sm text-center copy-btn-view">
+      <button class="cu-btn round bg-gradual-blue shadow" bindtap="copyClick">复制</button>
+    </view>
+  </view>
+</view>
+
+<view class="no-data" wx:else>
+  <image src="/images/noData.png"></image>
+  <text>暂无数据，需要先查询哦！</text>
+</view>
