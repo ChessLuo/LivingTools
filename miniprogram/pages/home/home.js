@@ -93,20 +93,20 @@ Page({
         isOpen: true,
         name: '蓝牙调试'
       },
-      {
-        id: 1,
-        icon: 'wefill',
-        color: 'pink',
-        isOpen: true,
-        name: 'NFC读卡器'
-      },
-      {
-        id: 2,
-        icon: 'subscription',
-        color: 'brown',
-        isOpen: true,
-        name: 'WIFI扫描'
-      }
+      // {
+      //   id: 1,
+      //   icon: 'wefill',
+      //   color: 'pink',
+      //   isOpen: true,
+      //   name: 'NFC读卡器'
+      // },
+      // {
+      //   id: 2,
+      //   icon: 'subscription',
+      //   color: 'brown',
+      //   isOpen: true,
+      //   name: 'WIFI扫描'
+      // }
     // ,{
     //   icon: 'recordfill',
     //   color: 'orange',

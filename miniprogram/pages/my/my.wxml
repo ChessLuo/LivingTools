@@ -35,12 +35,6 @@
       </view>
     </view> -->
     <view class="cu-item arrow">
-      <navigator class="content" url="/pages/about/about" hover-class="none">
-        <text class="cuIcon-upstagefill text-purple"></text>
-        <text class="text-grey">关于具无霸</text>
-      </navigator>
-    </view>
-    <view class="cu-item arrow">
       <navigator class="content" url="/pages/log/log" hover-class="none">
         <text class="cuIcon-formfill text-green"></text>
         <text class="text-grey">更新日志</text>
@@ -52,12 +46,24 @@
         <text class="text-grey">赞赏支持</text>
       </view>
     </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="toWebView" data-weburl="https://mp.weixin.qq.com/s/3HjywJBdO2v4irRIcBB5yQ">
+        <text class="cuIcon-appreciatefill text-red"></text>
+        <text class="text-grey">关注公众号</text>
+      </view>
+    </view>
     <!-- open-type="feedback"打开“意见反馈”页面，用户可提交反馈内容并上传日志，开发者可以登录小程序管理后台后进入左侧菜单“客服反馈”页面获取到反馈内容 -->
     <view class="cu-item arrow">
       <button class="cu-btn content" open-type="feedback">
         <text class="cuIcon-writefill text-cyan"></text>
         <text class="text-grey">意见反馈</text>
       </button>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/about" hover-class="none">
+        <text class="cuIcon-upstagefill text-purple"></text>
+        <text class="text-grey">关于具无霸</text>
+      </navigator>
     </view>
     
   </view>

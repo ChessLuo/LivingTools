@@ -64,11 +64,12 @@ var afdApi = {
 
 ///RollApi
 var rollApi = {
-  baseUrl: "https://www.mxnzp.com/api/",
-  historyTodayKey: "aa3dfdafa21aca58a1b9ebb2cba4fdf7",
+  baseUrl: "https://www.mxnzp.com",
+  appid:"xxx",
+  appsecret:"xxx",
   //笑话大全-最新笑话 https://www.mxnzp.com/api/jokes/list?page=3
   QueryJokeByPage: function (page) {
-    return this.baseUrl + "jokes/list?page=" + page;
+    return this.baseUrl + "/api/jokes/list?page=" + page+"&app_id="+this.appid+"&app_secret="+this.appsecret;
   },
 
 }

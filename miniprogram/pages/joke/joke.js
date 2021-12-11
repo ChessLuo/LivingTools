@@ -105,6 +105,7 @@ Page({
     let pageIndex = that.data.pageIndex;
     // let pageSize = that.data.pageSize;
     var queryJokeByPage = constant.rollApi.QueryJokeByPage(pageIndex);
+    console.log("lwc"+queryJokeByPage);
     netRequest.getRequest(queryJokeByPage, "加载中..", function (res) {
       var str = JSON.stringify(res); //json对象转换成字符串
       console.log("url=" + queryJokeByPage+"\n初始化数据:" + str);

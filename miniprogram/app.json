@@ -12,7 +12,8 @@
     "pages/history-detail/history-detail",
     "pages/grid-crop/grid-crop",
     "pages/nfc/nfc",
-    "pages/wifi/wifi"
+    "pages/wifi/wifi",
+    "pages/webview/webview"
   ],
   "window": {
     "backgroundTextStyle": "light",
